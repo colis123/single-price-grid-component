@@ -21,7 +21,6 @@ body {
   background: var(--light-gray);
   height: 100vh;
   padding: 5rem 2rem;
-  display: flex;
 }
 
 h4, p {
@@ -60,7 +59,6 @@ h4, p {
   background: white;
   border-radius: 5px;
   box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
-  overflow: hidden;
 }
 
 /* Header */
@@ -70,17 +68,15 @@ h4, p {
 
 /* Price Section */
 .container #price {
-  height: 33%;
   background: var(--cyan);
-  padding: .15rem 1rem;
+  padding: .15rem 1rem 1.5rem 1rem;
   color: #fff;
 }
 
 /* Why us */
 .container .why-us {
-  height: 100%;
   background: var(--off-cyan);
-  padding: .15rem 1rem;
+  padding: .15rem 1rem .5rem 1rem;
   color: #fff;
   line-height: 0;
 }
@@ -90,4 +86,7 @@ h4, p {
   line-height: .15;
   color: rgba(255, 255, 255, 0.705);
 }
+
+
+
 
