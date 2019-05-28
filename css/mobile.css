@@ -3,6 +3,7 @@
 :root {
   --light-gray: hsl(204, 43%, 93%);
   --cyan: hsl(179, 62%, 43%);
+  --off-cyan: hsla(179, 62%, 43%, 0.699);
   --bright-yellow: hsl(71, 73%, 54%);
   --grayish-blue: hsl(218, 22%, 67%);
 }
@@ -48,6 +49,11 @@ h4, p {
   box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
 }
 
+.btn:hover {
+  background: var(--light-gray);
+  color: var(--cyan);
+}
+
 
 /* Container */
 .container {
@@ -70,7 +76,18 @@ h4, p {
   color: #fff;
 }
 
-.container #why-us {
-  height: 33%;
+/* Why us */
+.container .why-us {
+  height: 100%;
+  background: var(--off-cyan);
+  padding: .15rem 1rem;
+  color: #fff;
+  line-height: 0;
+}
+
+.container .why-us p {
+  font-size: .9rem;
+  line-height: .15;
+  color: rgba(255, 255, 255, 0.705);
 }
 
