@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root {
+  --light-gray: hsl(204, 43%, 93%);
+  --cyan: hsl(179, 62%, 43%);
+  --off-cyan: hsla(179, 62%, 43%, 0.699);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: var(--light-gray);
+  height: 100vh;
+  padding: 5rem 2rem;
+}
+
+h4, p {
+  margin: 1rem 0;
+}
+
+/* Utilites */
+.primary {color: var(--cyan); }
+.secondary {color: var(--bright-yellow);}
+.gray {color: var(--grayish-blue);}
+.off-white{color: rgba(255, 255, 255, 0.705);}
+
+.large-text{font-size: 1.5rem;}
+.small-text{font-size: .9rem;}
+.btn {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  background: var(--bright-yellow);
+  padding: .5rem 1.25rem; 
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+}
+
+.btn:hover {
+  background: var(--light-gray);
+  color: var(--cyan);
+}
+
+
+/* Container */
+.container {
+  background: white;
+  border-radius: 5px;
+  box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
+}
+
+/* Header */
+.container #main-header {
+  padding: .15rem 1rem;
+}
+
+/* Price Section */
+.container #price {
+  background: var(--cyan);
+  padding: .15rem 1rem 1.5rem 1rem;
+  color: #fff;
+  border-bottom-left-radius: 4px;
+}
+
+/* Why us */
+.container .why-us {
+  background: var(--off-cyan);
+  padding: .15rem 1rem .5rem 1rem;
+  color: #fff;
+  line-height: 0;
+  border-bottom-right-radius: 4px;
+}
+
+.container .why-us p {
+  font-size: .9rem;
+  line-height: .15;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+@media screen and (min-width: 594px) {
+
+  body {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 250px;
+  }
+
+  .container #main-header {
+    grid-column: 1 /span 3;
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+
+  .container #price {
+    padding: .75rem 2rem;
+  }
+
+  .container .why-us {
+    padding: .75rem 2rem;
+  }
+
+  .container .why-us p {
+    line-height: .4;
+  }
+}
+
+
+
+
